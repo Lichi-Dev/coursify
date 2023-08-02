@@ -1,0 +1,152 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b1b1b;
+  height: 80px;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+.menu-items {
+  color: white;
+  font-size: 18px;
+  margin-right: 55px;
+  font-weight: 600;
+}
+.menu-items:hover {
+  color: #2bb262;
+}
+.logo {
+  width: 120px;
+  height: 40px;
+  margin-left: 50px;
+}
+.hamburger-menu {
+  display: none;
+}
+.signin-button {
+  height: 40px;
+  width: 100px;
+  background-color: transparent;
+  background-color: #2bb262;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 2px solid #2bb262;
+}
+.signin-button:hover {
+  height: 40px;
+  border: 2px solid #2bb262;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.signin-button-mobile {
+  height: 40px;
+  border: none;
+  background-color: #2bb262;
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 100px;
+  margin-top: 10px;
+  width: 100px;
+}
+.hamburger-menu-container {
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .navbar-container {
+    height: 70px;
+  }
+  .logo {
+    width: 105px;
+    height: 35px;
+    margin-left: 30px;
+  }
+  .hamburger-menu {
+    display: block;
+    color: white;
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  .menu-container {
+    display: none;
+  }
+  .menuMask {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+  }
+  .menu {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    z-index: 50;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobile-menu-header {
+    color: white;
+  }
+  .mobile-menu-items {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .mobile-menu-container {
+    border-bottom: 1px solid #2bb262;
+    padding: 30px;
+  }
+  .mobile-menu-items:hover {
+    color: #2bb262;
+  }
+  .signin-button {
+    display: none;
+  }
+  .hamburger-menu-container {
+    display: block;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .menu-items {
+    color: white;
+    font-size: 12px;
+    margin-right: 25px;
+    font-weight: 600;
+  }
+  .signin-button {
+    height: 35px;
+    width: 100px;
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .signin-button {
+    height: 35px;
+    width: 100px;
+    font-size: 9px;
+  }
+}

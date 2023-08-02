@@ -1,0 +1,87 @@
+.hero-container {
+  background-image: url("../../assets/hhnew.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+.hero-heading {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  font-family: "League Gothic", sans-serif;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 190px;
+  margin-top: -50px;
+  margin-bottom: 40px;
+}
+.surname {
+  color: #ffbe2e;
+}
+.hero-description {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  width: 60%;
+}
+.contact-logo {
+  width: 80px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 100;
+}
+.side-bar-section {
+  position: relative;
+  height: 150px;
+  width: 50px;
+  background: #ffbe2e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.icon {
+  margin: 5px;
+  color: #050505;
+}
+.side-bar-container {
+  position: fixed;
+  right: 0px;
+  top: 40vh;
+  z-index: 100;
+}
+@media only screen and (max-width: 1199.5px) {
+  .side-bar-section {
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .side-bar-section {
+    width: 25px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .hero-heading {
+    font-size: 50px;
+    letter-spacing: -3px;
+  }
+  .hero-description {
+    width: 99%;
+    font-size: 25px;
+    margin-bottom: 120px;
+  }
+}

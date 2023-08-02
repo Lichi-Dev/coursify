@@ -1,0 +1,115 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #1b1b1b;
+  padding: 30px 0;
+}
+.footer-company-logo {
+  margin-bottom: 30px;
+  width: 120px;
+  height: 40px;
+}
+.bottom-details {
+  width: 100%;
+}
+.bottom-details .bottom_text {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.contact-icons {
+  color: white;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+.contact-icons-home {
+  color: white;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+.contact-information {
+  margin-bottom: 25px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icons {
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.twitter:hover {
+  color: #00acee !important;
+}
+.facebook:hover {
+  color: #4267b2 !important;
+}
+.instagram:hover {
+  color: #d62976 !important;
+}
+.youtube:hover {
+  color: #ff0000 !important;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.social-text {
+  height: 22px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-right: 10px;
+}
+@media (max-width: 1199.5px) {
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a {
+    font-size: 12px;
+  }
+  .bottom-details .bottom_text {
+    flex-direction: column;
+  }
+  .copyright_text {
+    order: 3;
+    text-align: center;
+  }
+  .social-media {
+    height: 22px;
+    margin-bottom: 0px;
+    order: -1;
+    justify-content: center;
+  }
+  .created-by {
+    text-align: center;
+    margin-bottom: 4px;
+  }
+}

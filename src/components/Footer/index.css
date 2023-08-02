@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.footer-company-logo {
+  width: 120px;
+  height: 40px;
+}
+.social-text {
+  height: 22px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+.quicklinks-box {
+  display: flex !important;
+  flex-direction: row !important;
+}
+.quicklinks-box1 {
+  margin-right: 40px;
+}
+footer {
+  position: absolute;
+  background: #1b1b1b;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+}
+.icons {
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.twitter:hover {
+  color: #00acee !important;
+}
+.facebook:hover {
+  color: #4267b2 !important;
+}
+.instagram:hover {
+  color: #d62976 !important;
+}
+.youtube:hover {
+  color: #ff0000 !important;
+}
+footer .content {
+  max-width: 1440px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .link-boxes {
+  width: 100%;
+  display: flex;
+}
+.box-contacts {
+  margin-right: 90px;
+  width: calc(100% / 1.8 - 10px) !important;
+}
+.box-events-wushuteam {
+  margin-left: 40px;
+}
+.box-quicklinks {
+  width: calc(100% / 2 - 10px) !important;
+}
+footer .content .link-boxes .box {
+  width: calc(100% / 3 - 10px);
+}
+.content .link-boxes .box .link_name {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+  margin-top: 15px;
+}
+.content .link-boxes .box li {
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+.content .link-boxes .box li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box {
+  margin-right: 55px;
+}
+.link-boxes .input-box input {
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #afafb6;
+  background: #140b5c;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder {
+  color: #afafb6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"] {
+  background: #fff;
+  color: #140b5c;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover {
+  opacity: 1;
+}
+footer .bottom-details {
+  width: 100%;
+  background: black;
+}
+footer .bottom-details .bottom_text {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a {
+  margin-right: 10px;
+}
+.contact-icons {
+  color: white;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+.contact-icons-home {
+  color: white;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+.contact-information {
+  margin-bottom: 25px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 1199.5px) {
+  .box-quicklinks {
+    margin-bottom: -30px;
+  }
+  .content .link-boxes .box .link_name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .content .link-boxes .box li a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease;
+  }
+  footer .content .link-boxes {
+    flex-direction: column;
+  }
+  footer {
+    position: relative;
+  }
+  footer .content .link-boxes .box {
+    width: calc(100% / 1 - 10px) !important;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a {
+    font-size: 12px;
+  }
+  footer .bottom-details .bottom_text {
+    flex-direction: column;
+  }
+  .copyright_text {
+    order: 3;
+    text-align: center;
+  }
+  .social-media {
+    height: 22px;
+    margin-bottom: 0px;
+    order: -1;
+    justify-content: center;
+  }
+  .created-by {
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  footer .content {
+    padding: 30px 10px 40px 10px;
+  }
+  .events-links {
+    width: calc(100% / 2 - 10px);
+    order: 1;
+  }
+  .wushuteam-links {
+    width: calc(100% / 3 - 10px);
+    order: 0;
+  }
+  .box-events-wushuteam {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+  .quicklinks-box1 {
+    margin-right: 150px;
+  }
+}
+@media (max-width: 520px) {
+  footer .content .link-boxes .box {
+    width: calc(100% / 1 - 10px);
+  }
+  footer .bottom-details .bottom_text {
+    flex-direction: column;
+  }
+  .quicklinks-box1 {
+    margin-right: 40px;
+  }
+  .wushuteam-links {
+    width: calc(100% / 2 - 10px);
+  }
+}
