@@ -9,30 +9,8 @@ export default function Register() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
-  async function registerUser(e) {
+  function registerUser(e) {
     e.preventDefault();
-    const response = await fetch("http://localhost:1337/api/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        password,
-      }),
-    });
-    const data = await response.json();
-    if (data.status == "ok") {
-      setError("");
-      setSuccess("Registered successfully");
-      setName("");
-      setEmail("");
-      setPassword("");
-    } else {
-      setSuccess("");
-      setError("Enter Unique Email Address");
-    }
   }
   return (
     <div className="login-container">

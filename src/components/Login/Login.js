@@ -4,31 +4,12 @@ import { HashLink as Link } from "react-router-hash-link";
 import { useNavigate } from "react-router-dom";
 
 function Login(history) {
-  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  async function loginUser(e) {
+  function loginUser(e) {
     e.preventDefault();
-    const response = await fetch("http://localhost:1337/api/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email,
-        password,
-      }),
-    });
-    const data = await response.json();
-    if (data.user) {
-      setError("");
-      navigate("/");
-    } else {
-      setError("Incorrect Email or Password");
-    }
-    console.log(data);
   }
   return (
     <div className="login-container">
