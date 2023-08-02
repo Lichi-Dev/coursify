@@ -101,9 +101,14 @@ class Navbar extends Component {
                 </Link>
               </div>
             </div>
-            <a style={{ textDecoration: "none", color: "black" }} to="/login">
-              <button className="signin-button-mobile">Sign In</button>
-            </a>
+            <Link style={{ textDecoration: "none" }} to="/login">
+              <button
+                onClick={this.onExitMenu}
+                className="signin-button-mobile"
+              >
+                Sign In
+              </button>
+            </Link>
           </div>
         ) : null}
       </nav>
