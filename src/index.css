@@ -17,6 +17,6 @@ html {
 }
 @media only screen and (max-width: 37.5em) {
   html {
-    scroll-padding-top: 60px;
+    scroll-padding-top: 80px;
   }
 }

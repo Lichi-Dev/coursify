@@ -15,5 +15,6 @@
 @media only screen and (max-width: 800px) {
   .about-para {
     width: 95vw;
+    font-size: 16px;
   }
 }

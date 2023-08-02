@@ -80,21 +80,21 @@ class Navbar extends Component {
           <div className="menu">
             <div>
               <div className="mobile-menu-container">
-                <Link style={{ textDecoration: "none" }} to="/">
+                <Link style={{ textDecoration: "none" }} to="/#home">
                   <h1 onClick={this.onExitMenu} className="mobile-menu-items">
                     Home
                   </h1>
                 </Link>
               </div>
               <div className="mobile-menu-container">
-                <Link style={{ textDecoration: "none" }} to="/">
+                <Link style={{ textDecoration: "none" }} to="/#jobs">
                   <h1 className="mobile-menu-items" onClick={this.onExitMenu}>
                     Jobs
                   </h1>
                 </Link>
               </div>
               <div className="mobile-menu-container">
-                <Link style={{ textDecoration: "none" }} to="/">
+                <Link style={{ textDecoration: "none" }} to="/#aboutus">
                   <h1 onClick={this.onExitMenu} className="mobile-menu-items">
                     About us
                   </h1>

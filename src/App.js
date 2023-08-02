@@ -5,7 +5,6 @@ import Login from "./components/Login/Login";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import NewFooter from "./components/NewFooter";
 import { useEffect } from "react";
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
         </Routes>
-        <NewFooter />
+        <Footer />
       </BrowserRouter>
     </div>
   );
